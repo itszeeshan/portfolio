@@ -1,16 +1,20 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { IMAGES } from "@/constants";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
+  name: "Zeeshan",
+  initials: "MZ",
+  url: "https://zeesek.io",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer | Cybersecurity Consultant | Former Bug Bounty Hunter & Penetration Tester",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    `Results-driven professional with 3+ years of software engineering professional experience in developing architecture, programming, cloud-native and cloud
+ready applications, plus 4+ years professional experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
+that drive business growth. With strong management, communication, and collaboration skills, I bridge the gap between
+technical teams and business stakeholders to ensure alignment and success.`,
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -30,152 +34,130 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "iamzeeshan1233@gmail.com",
+    // tel: "+",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/itszeeshan",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://linkedin.com/in/zeesec",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/itszeeshan2",
         icon: Icons.x,
 
         navbar: true,
       },
       Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        name: "Medium",
+        url: "https://medium.com/@zeesek",
         icon: Icons.youtube,
-        navbar: true,
+        navbar: false,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:iamzeeshan1233@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Rebolet",
+      href: "https://www.rebolet.com/",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      location: `Berlin, Germany -- Remote`,
+      title: "Senior Software Engineer",
+      logoUrl: IMAGES.REBOLET_LOGO,
+      start: "Jan 2024",
+      end: "Feb 2025",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        `• Led the design and architecture of a comprehensive Enterprise resource planning (ERP) system, centralizing critical functions like
+product information, suppliers, and logistics, achieving a 25% increase in operational efficiency across platforms like Shopify and
+Amazon while ensuring the UI of the application is minimal and easy to understand for users.
+• Led the design and development for a Customer Return Portal for 200,000+ customers, allowing them to test and grade products
+upon return, eliminating the need for manual inspection of each returned item, which improved return processing efficiency by 50%
+and significantly reduced labor costs.
+• Managed a team of four engineers, driving code quality, security, and best practices through mentorship, in-depth code reviews,
+and technical guidance, resulting in faster deployments, fewer production issues, and stronger team collaboration.
+• Partnered with leadership and non-technical stakeholders to align technical solutions with business goals, driving key strategic
+decisions and company growth.`,
     },
     {
-      company: "Shopify",
+      company: "Rebolet",
+      href: "https://www.rebolet.com/",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
+      location: `Berlin, Germany - Remote`,
       title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      logoUrl: IMAGES.REBOLET_LOGO,
+      start: "June 2022",
+      end: "Jan 2024",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        `• Architected and built a Product Information Manager to automate and govern product data, eliminating 60% of manual workflows
+and reducing operational overhead, enabling faster product launches with airtight security.
+• Collaborated to build TestNGrade, optimizing product categorization and pricing for 500+ suppliers, driving €7 per item on
+200,000+ products which significantly boosted revenue. Enhanced backend performance by refactoring API endpoints, improving
+response times and scalability. Optimized the frontend with tree shaking, reducing app size by 30% and cutting load times by 20%.
+Collaborated with the design team to create a user-friendly interface, increasing user engagement and navigation efficiency.
+Implemented a robust access management framework, strengthening security and ensuring compliance across applications,
+including the Suppliers Portal Dashboard.
+• Spearheaded the redesign of Supplier Portal Dashboard unifying financial data and automating invoices for executives. Optimized
+APIs and frontend, cutting load times by 35% and boosting efficiency by 50%. Led a UX overhaul, increasing adoption by 45%.`,
     },
     {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
+      company: "HackerOne",
+      href: "https://www.hackerone.com/",
       badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
+      location: "San Francisco, California - Remote",
+      title: "Security Researcher",
+      logoUrl: IMAGES.HACKERONE_LOGO,
       start: "January 2020",
       end: "April 2020",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        `• Recognized by industry leaders like Meta, Airbnb, Toyota, Snapchat, HackerOne, Shopify, and Spotify for identifying critical security
+vulnerabilities impacting 100M+ daily users. Notably, Authored a top-ranked HackerOne report, disclosed on May 31, 2019, which
+led the HackerOne Hacktivity dashboard for two months, serving as a key resource for security researchers.
+• Earned several badges, including Greybeard for submitting valid reports for more than one month in a row, Good Samaritan for
+resolving issues with teams that do not pay, Belle of the Ball for a top-ranked Hacktivity report which maintained a high-impact
+presence in the security community, contributing to industry best practices and Hacking Hackers.`,
     },
     {
-      company: "Splunk",
-      href: "https://splunk.com",
+      company: "Bugcrowd",
+      href: "https://www.bugcrowd.com/",
       badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
+      location: "San Francisco, California - Remote",
+      title: "Security Researcher",
+      logoUrl: IMAGES.BUGCROWD_LOGO,
       start: "January 2019",
       end: "April 2019",
       description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+      `•I take pride in being acknowledged by industry giants, including BugCrowd itself, Digital Ocean, Twilio, Intercom, Credit Karma and
+      many more on this platform by helping these companies fix their security issues that could have effect 10M+ daily users.
+      Have reported multiple flaws to multiple companies like Server Security Misconfiguration, Broken Authentication and Session
+      Management, Server-Side Injection, Insufficient Security Configurability, Insecure Data Transport, Cross-Site Scripting etc."`,
     },
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      school: "Bahria University E-8 Campus",
+      href: "https://www.bahria.edu.pk/",
+      degree: "Bachelors In Information Technology",
+      logoUrl: IMAGES.BAHRIA_LOGO,
+      start: "February 2020",
+      end: "February 2024",
     },
   ],
   projects: [
