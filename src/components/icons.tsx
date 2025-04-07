@@ -220,4 +220,9 @@ export const Icons = {
       />
     </svg>
   ),
+  medium: (props: IconProps) => (
+    <svg role="img" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M4.01 5h3.72l3.02 6.69L14.7 5h3.46l.01.35-1.32 1.54v9.36l1.31 1.5v.31h-5.2v-.31l1.35-1.51v-7.3l-3.55 8.43h-.44L6.92 9.64v5.68l1.5 1.51v.31H4v-.31l1.5-1.51V6.89L4 5.35V5Z" />
+  </svg>
+  )
 };
