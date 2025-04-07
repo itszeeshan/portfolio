@@ -1,6 +1,8 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { Meteors } from "@/components/magicui/meteors";
+import { SpinningText } from "@/components/magicui/spinning-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -14,6 +16,8 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <SpinningText className="hidden sm:fixed sm:bottom-4 sm:right-4 sm:z-50 sm:block">learn more • earn more • grow more •</SpinningText>
+      <Meteors number={30}/>
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
