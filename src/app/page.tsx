@@ -1,3 +1,4 @@
+import { AvatarPreviewDialog } from "@/components/avatar-preview-dialog";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -35,10 +36,13 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <AvatarPreviewDialog
+              src={DATA.avatarUrl}
+              alt={DATA.name}
+              fallback={DATA.initials}
+              fullWidth="500px"
+              className="size-28 border"
+            />
             </BlurFade>
           </div>
         </div>
