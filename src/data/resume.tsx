@@ -6,8 +6,8 @@ export const DATA = {
   name: "Zeeshan",
   initials: "MZ",
   url: "https://zeesek.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  location: "Islamabad, Pakistan",
+  locationLink: "https://www.google.com/maps/place/islamabad",
   description:
     "Software Engineer | Cybersecurity Consultant | Former Bug Bounty Hunter & Penetration Tester",
   summary:
@@ -15,19 +15,63 @@ export const DATA = {
 ready applications, plus 4+ years professional experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
 that drive business growth. With strong management, communication, and collaboration skills, I bridge the gap between
 technical teams and business stakeholders to ensure alignment and success.`,
+ professional_summary: `
+- 5+ years of experience in software development.
+- 4+ years of experience in cybersecurity.
+- Strong experience in developing both monolithic and microservices based applications.
+- Distributed cloud computing (GCP, AWS).
+- Database design & development (SQL & NoSQL)
+- Experience in using project management tools such as Jira.
+ `,
   avatarUrl: "/me.jpeg",
   skills: [
-    "React",
-    "Next.js",
     "Typescript",
-    "Node.js",
+    "Javascript",
+    "Nodejs",
     "Python",
     "Go",
-    "Postgres",
+    "SQL",
+    "React.js",
+    "Next.js",
+    "Vue.js",
+    "Express.js",
+    "Nest.js",
+    "Vite",
+    "Redux",
+    "GraphQL(Apollo)",
+    "Auth0",
+    "tRPC(TypeScript Remote Procedure Call)",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "DynamoDB",
+    "Supabase",
+    "Firebase",
+    "Firestore",
+    "Sequelize",
+    "Prisma",
     "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "Github Actions Workflows",
+    "Gitlab CI/CD",
+    "AWS CDK (Cloud Development Kit)",
+    "Terraform",
+    "AWS (Amplify, EC2, RDS, Cognito, EKS, S3, Lambda, API Gateway, VPC, CloudWatch etc.)",
+    "GCP (App Engine, CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)",
+    "Git",
+    "Jest",
+    "Cypress",
+    "Apache Kafka",
+    "Directus",
+    "Sanity",
+    "Sentry",
+    "Stripe",
+    "CSS",
+    "Sass",
+    "TailwindCSS",
+    "Amplify UI",
+    "Shadcn UI",
+    "Magic UI",
+    "I18n",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -78,20 +122,19 @@ technical teams and business stakeholders to ensure alignment and success.`,
     {
       company: "Rebolet",
       href: "https://www.rebolet.com/",
-      badges: [],
+      badges: ["Typescript", "NodeJs", "NestJs", "ExpressJs", "Directus", "Vue", "GCP (CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)", "Sentry ", "Cypress", "Jest", "Docker", "Gitlab CI/CD", "Postgres", "Firebase", "Redis", "Sass", "Vite + React", "Zod", "Redux", "AWS (Amplify, CloudWatch, DynamoDB, API Gateway, S3 etc.)", "Serverless", "Terraform"],
+      industries: ["B2C, B2B and B2B2C SaaS and versions of our app", "E-Commerce", "Retail", "Re-Commerce", "Logistics"],
       location: `Berlin, Germany - Remote`,
       title: "Senior Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "Jan 2024",
       end: "Feb 2025",
       description:
-        `- Led the design and architecture of a comprehensive Enterprise resource planning (ERP) system, centralizing critical functions like
-product information, suppliers, and logistics, achieving a 25% increase in operational efficiency across platforms like Shopify and
-Amazon while ensuring the UI of the application is minimal and easy to understand for users.
-- Led the design and development for a Customer Return Portal for 200,000+ customers, allowing them to test and grade products
-upon return, eliminating the need for manual inspection of each returned item, which improved return processing efficiency by 50%
-and significantly reduced labor costs.
-- Managed a team of four engineers, driving code quality, security, and best practices through mentorship, in-depth code reviews,
+        `
+- Led the design and development for a **Return Management System (Customer Return Portal)** for **200,000+ customers**, allowing them to test and grade products
+upon return, eliminating the need for manual inspection of each returned item, which **improved return processing efficiency by 50%**
+and significantly **reduced labor costs**.
+- Managed a remote tech team, driving code quality, security, and best practices through mentorship, in-depth code reviews,
 and technical guidance, resulting in faster deployments, fewer production issues, and stronger team collaboration.
 - Partnered with leadership and non-technical stakeholders to align technical solutions with business goals, driving key strategic
 decisions and company growth.`,
@@ -99,55 +142,42 @@ decisions and company growth.`,
     {
       company: "Rebolet",
       href: "https://www.rebolet.com/",
-      badges: [],
+      badges: ["Typescript", "NodeJs", "NestJs", "ExpressJs", "Directus", "Vue", "GCP (CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)", "Sentry ", "Cypress", "Jest", "Docker", "Gitlab CI/CD", "Postgres", "Firebase", "Redis", "Sass", "Serverless", "Auth0"],
+      industries: ["B2B & B2C Re-commerce Tech", "focus to EU ecommerce market"],
       location: `Berlin, Germany - Remote`,
       title: "Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "June 2022",
       end: "Jan 2024",
       description:
-        `- Architected and built a Product Information Manager to automate and govern product data, eliminating 60% of manual workflows
-and reducing operational overhead, enabling faster product launches with airtight security.
-- Collaborated to build TestNGrade, optimizing product categorization and pricing for 500+ suppliers, driving €7 per item on
-200,000+ products which significantly boosted revenue. Enhanced backend performance by refactoring API endpoints, improving
-response times and scalability. Optimized the frontend with tree shaking, reducing app size by 30% and cutting load times by 20%.
-- Collaborated with the design team to create a user-friendly interface, increasing user engagement and navigation efficiency.
+        `- Planned, Architected and Executed a **Product Information Management System** to automate and govern product data, **eliminating 60% of manual workflows
+and reducing operational overhead, enabling faster product launches with airtight security**.
+- Collaborated to build **TestNGrade**, optimizing product categorization and pricing for **500+ suppliers**, driving **€7 per item on
+200,000+ products** which significantly **boosted revenue**. Enhanced backend performance by refactoring API endpoints, improving
+response times and scalability. Optimized the frontend with tree shaking, **reducing app size by 30% and cutting load times by 40%**. 
+Collaborated with the design team to create a user-friendly interface, increasing user engagement and navigation efficiency.
 Implemented a robust access management framework, strengthening security and ensuring compliance across applications,
 including the Suppliers Portal Dashboard.
-- Spearheaded the redesign of Supplier Portal Dashboard unifying financial data and automating invoices for executives. Optimized
-APIs and frontend, cutting load times by 35% and boosting efficiency by 50%. Led a UX overhaul, increasing adoption by 45%.`,
+- Led the redesign of **Supplier Portal Dashboard** unifying financial data and automating invoices for executives. Optimized
+APIs and frontend, **cutting load times by 35% and boosting efficiency by 50%**. Led a UX overhaul, **increasing adoption by 45%.**`,
     },
     {
       company: "HackerOne",
       href: "https://www.hackerone.com/",
       badges: [],
+      industries: [],
       location: "San Francisco, California - Remote",
       title: "Security Researcher",
       logoUrl: IMAGES.HACKERONE_LOGO,
-      start: "January 2020",
-      end: "April 2020",
+      start: "August 2017",
+      end: "January 2021",
       description:
-        `- Recognized by industry leaders like Meta, Airbnb, Toyota, Snapchat, HackerOne, Shopify, and Spotify for identifying critical security
-vulnerabilities impacting 100M+ daily users. Notably, Authored a top-ranked HackerOne report, disclosed on May 31, 2019, which
+        `- Recognized by industry leaders like [Meta, Airbnb, Toyota, Snapchat, HackerOne, Shopify, and Spotify]() for identifying security
+vulnerabilities impacting 100M+ daily users. Notably, Authored a top-ranked HackerOne report, on Nov 10, 2017, which
 led the HackerOne Hacktivity dashboard for two months, serving as a key resource for security researchers.
-- Earned several badges, including Greybeard for submitting valid reports for more than one month in a row, Good Samaritan for
+- Earned [several badges](https://hackerone.com/zeesek/badges), including Greybeard for submitting valid reports for more than one month in a row, Good Samaritan for
 resolving issues with teams that do not pay, Belle of the Ball for a top-ranked Hacktivity report which maintained a high-impact
-presence in the security community, contributing to industry best practices and Hacking Hackers.`,
-    },
-    {
-      company: "Bugcrowd",
-      href: "https://www.bugcrowd.com/",
-      badges: [],
-      location: "San Francisco, California - Remote",
-      title: "Security Researcher",
-      logoUrl: IMAGES.BUGCROWD_LOGO,
-      start: "January 2019",
-      end: "April 2019",
-      description:
-      `- I take pride in being acknowledged by industry giants, including BugCrowd itself, Digital Ocean, Twilio, Intercom, Credit Karma and
-      many more on this platform by helping these companies fix their security issues that could have effect 10M+ daily users.
-      - Have reported multiple flaws to multiple companies like Server Security Misconfiguration, Broken Authentication and Session
-      Management, Server-Side Injection, Insufficient Security Configurability, Insecure Data Transport, Cross-Site Scripting etc."`,
+presence in the security community, contributing to industry best practices and Hacking Hackers. ![https://hackerone.com/zeesek/badges](${IMAGES.HACKERONE_BAGES})`,
     },
   ],
   education: [
@@ -170,14 +200,53 @@ presence in the security community, contributing to industry best practices and 
       description:
         "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
       technologies: [
-        "Next.js",
         "Typescript",
+        "Javascript",
+        "Nodejs",
+        "Python",
+        "Go",
+        "SQL",
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Express.js",
+        "Nest.js",
+        "Vite",
+        "Redux",
+        "GraphQL(Apollo)",
+        "Auth0",
+        "tRPC(TypeScript Remote Procedure Call)",
         "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "DynamoDB",
+        "Supabase",
+        "Firebase",
+        "Firestore",
+        "Sequelize",
         "Prisma",
-        "TailwindCSS",
+        "Docker",
+        "Github Actions Workflows",
+        "Gitlab CI/CD",
+        "AWS CDK (Cloud Development Kit)",
+        "Terraform",
+        "AWS (Amplify, EC2, RDS, Cognito, EKS, S3, Lambda, API Gateway, VPC, CloudWatch etc.)",
+        "GCP (App Engine, CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)",
+        "Git",
+        "Jest",
+        "Cypress",
+        "Apache Kafka",
+        "Directus",
+        "Sanity",
+        "Sentry",
         "Stripe",
+        "CSS",
+        "Sass",
+        "TailwindCSS",
+        "Amplify UI",
         "Shadcn UI",
         "Magic UI",
+        "I18n",
       ],
       links: [
         {

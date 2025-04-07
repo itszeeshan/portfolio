@@ -20,6 +20,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  industries?: readonly string[];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -31,24 +32,26 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  industries,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
-      setIsExpanded(!isExpanded);
-    }
+    // if (description) {
+    //   e.preventDefault();
+    //   setIsExpanded(!isExpanded);
+    // }
+    e.stopPropagation();
   };
 
   return (
-    <Link
-      href={href || "#"}
-      className="block cursor-pointer"
-      onClick={handleClick}
-    >
       <Card className="flex">
         <div className="flex-none">
+        <Link
+            href={href || "#"}
+            className="block cursor-pointer"
+            onClick={handleClick}
+          >
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
@@ -57,25 +60,13 @@ export const ResumeCard = ({
             />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
+          </Link>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="flex-grow ml-4 items-center flex-col group" onClick={() => description && setIsExpanded(!isExpanded)}>
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                 {title}
-                {badges && (
-                  <span className="inline-flex gap-x-1">
-                    {badges.map((badge, index) => (
-                      <Badge
-                        variant="secondary"
-                        className="align-middle text-xs"
-                        key={index}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </span>
-                )}
                 <ChevronRightIcon
                   className={cn(
                     "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
@@ -106,15 +97,44 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-s flex flex-col gap-4"
             >
               <Markdown className={"prose max-w-full text-pretty font-sans text-sm dark:prose-invert"}>
               {description}
               </Markdown>
+              {badges?.length ? (
+                  <span className="flex flex-wrap gap-1 items-center">
+                    <b>Tech Stacks:</b>
+                    {badges.map((badge, index) => (
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={index}
+                      >
+                        {badge}
+                      </Badge>
+                    ))}
+                  </span>
+                ): ""
+              }
+              {industries?.length ? (
+                  <span className="flex flex-wrap gap-1 items-center">
+                    <b>Industry:</b>
+                    {industries.map((industry, index) => (
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={index}
+                      >
+                        {industry}
+                      </Badge>
+                    ))}
+                  </span>
+                ): ""
+              }
             </motion.div>
           )}
         </div>
       </Card>
-    </Link>
   );
 };

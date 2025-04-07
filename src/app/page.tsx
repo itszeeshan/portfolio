@@ -53,16 +53,16 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      {/* <section id="professional-summary">
+      <section id="professional-summary">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">PROFESSIONAL SUMMARY</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
+            {DATA.professional_summary}
           </Markdown>
         </BlurFade>
-      </section> */}
+      </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -84,6 +84,7 @@ export default function Page() {
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
+                industries={work.industries}
               />
             </BlurFade>
           ))}
