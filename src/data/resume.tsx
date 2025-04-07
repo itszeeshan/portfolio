@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Software Engineer | Cybersecurity Consultant | Former Bug Bounty Hunter & Penetration Tester",
   summary:
-    `Results-driven professional with 3+ years of software engineering professional experience in developing architecture, programming, cloud-native and cloud
+    `Results-driven professional with 3+ years of professional software engineering experience in developing architecture, programming, cloud-native and cloud
 ready applications, plus 4+ years professional experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
 that drive business growth. With strong management, communication, and collaboration skills, I bridge the gap between
 technical teams and business stakeholders to ensure alignment and success.`,
@@ -79,7 +79,7 @@ technical teams and business stakeholders to ensure alignment and success.`,
       company: "Rebolet",
       href: "https://www.rebolet.com/",
       badges: [],
-      location: `Berlin, Germany -- Remote`,
+      location: `Berlin, Germany - Remote`,
       title: "Senior Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "Jan 2024",
@@ -155,6 +155,7 @@ presence in the security community, contributing to industry best practices and 
       school: "Bahria University E-8 Campus",
       href: "https://www.bahria.edu.pk/",
       degree: "Bachelors In Information Technology",
+      location: "Islamabad, Pakistan",
       logoUrl: IMAGES.BAHRIA_LOGO,
       start: "February 2020",
       end: "February 2024",

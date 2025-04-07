@@ -13,6 +13,7 @@ interface ResumeCardProps {
   logoUrl: string;
   altText: string;
   title: string;
+  location: string;
   subtitle?: string;
   href?: string;
   badges?: readonly string[];
@@ -24,6 +25,7 @@ export const ResumeCard = ({
   altText,
   title,
   subtitle,
+  location,
   href,
   badges,
   period,
@@ -80,8 +82,13 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="flex-col text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div>
                 {period}
+              </div>
+              <div>
+                {location}
+              </div>
               </div>
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
