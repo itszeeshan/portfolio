@@ -18,7 +18,7 @@ interface Props {
   dates: string;
   tags: readonly string[];
   link?: string;
-  image?: string;
+  images?: readonly { src: string, alt: string }[];
   video?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -35,7 +35,7 @@ export function ProjectCard({
   dates,
   tags,
   link,
-  image,
+  images,
   video,
   links,
   className,
@@ -60,14 +60,36 @@ export function ProjectCard({
             className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
           />
         )}
-        {image && (
+        {images && images.length > 0 && (
+          <div className="relative">
           <Image
-            src={image}
+            src={images[0].src}
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-40 w-full object-cover object-top"
           />
+          <div className="absolute bottom-2 right-2 flex gap-2 z-10">
+            {images.slice(1, 3).map((img, index) => (
+              <div
+                key={index}
+                className="relative w-10 h-10 md:w-12 md:h-12 rounded-md overflow-hidden border-2 border-white shadow-md"
+              >
+                <Image
+                  src={img.src || "/placeholder.svg"}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+            {images.length > 3 && (
+              <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-md overflow-hidden border-2 border-white bg-black/60 flex items-center justify-center text-white text-[10px] md:text-xs font-medium shadow-md">
+                +{images.length - 3}
+              </div>
+            )}
+          </div>
+        </div>
         )}
       </Link>
       <CardHeader className="px-2">
