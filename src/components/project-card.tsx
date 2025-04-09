@@ -6,10 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import MediaPreview from "./media-preview";
 
 interface Props {
   title: string;
@@ -46,52 +45,7 @@ export function ProjectCard({
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
-      >
-        {video && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
-          />
-        )}
-        {images && images.length > 0 && (
-          <div className="relative">
-          <Image
-            src={images[0].src}
-            alt={title}
-            width={500}
-            height={300}
-            className="h-40 w-full object-cover object-top"
-          />
-          <div className="absolute bottom-2 right-2 flex gap-2 z-10">
-            {images.slice(1, 3).map((img, index) => (
-              <div
-                key={index}
-                className="relative w-10 h-10 md:w-12 md:h-12 rounded-md overflow-hidden border-2 border-white shadow-md"
-              >
-                <Image
-                  src={img.src || "/placeholder.svg"}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
-            {images.length > 3 && (
-              <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-md overflow-hidden border-2 border-white bg-black/60 flex items-center justify-center text-white text-[10px] md:text-xs font-medium shadow-md">
-                +{images.length - 3}
-              </div>
-            )}
-          </div>
-        </div>
-        )}
-      </Link>
+      <MediaPreview video={video} images={images}/>
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
