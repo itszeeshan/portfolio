@@ -8,9 +8,10 @@ import Image from "next/image"
 interface MediaPreviewProps {
   video?: string
   images?: readonly { src: string; alt: string }[]
+  highlight?: string
 }
 
-function MediaPreview({ video, images }: MediaPreviewProps){
+function MediaPreview({ video, images, highlight }: MediaPreviewProps){
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -27,7 +28,7 @@ function MediaPreview({ video, images }: MediaPreviewProps){
           ) : images && images.length > 0 ? (
             <div className="relative">
             <Image
-                src={images[0].src}
+                src={highlight as string}
                 alt={images[0].alt}
                 width={500}
                 height={300}

@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
+import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
 
 export const DATA = {
   name: "Zeeshan",
@@ -12,12 +12,12 @@ export const DATA = {
     "Software Engineer | Cybersecurity Consultant | Former Bug Bounty Hunter & Penetration Tester",
   summary:
     `Results-driven professional with 3+ years of professional software engineering experience in developing architecture, programming, cloud-native and cloud
-ready applications, plus 4+ years professional experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
+ready applications, plus 4 years of experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
 that drive business growth. With strong management, communication, and collaboration skills, I bridge the gap between
 technical teams and business stakeholders to ensure alignment and success.`,
  professional_summary: `
 - 5+ years of experience in software development.
-- 4+ years of experience in cybersecurity.
+- 4 years of experience in cybersecurity.
 - Strong experience in developing both monolithic and microservices based applications.
 - Strong cloud experience (GCP, AWS).
 - Database design & development (SQL & NoSQL)
@@ -197,7 +197,6 @@ presence in the security community, contributing to industry best practices and 
         "Developed a Virtual Assistance Platform for users where they can connect on a single platform to have an interaction and exchange information live, they can get help or get paid for providing help.",
       technologies: [
         "Next.js",
-        "Webpack",
         "Typescript",
         "TailwindCSS",
         "Shadcn UI",
@@ -209,7 +208,6 @@ presence in the security community, contributing to industry best practices and 
         "Nestjs",
         "Nodejs",
         "Mongodb",
-        "Atlas",
         "Prisma",
         "Mau",
         "Vercel",
@@ -223,6 +221,7 @@ presence in the security community, contributing to industry best practices and 
           icon: <Icons.globe className="size-3" />,
         },
       ],
+      highlight: VASSIST_IMAGES.IMAGE_4,
       images: [
         { src: VASSIST_IMAGES.IMAGE_1, alt: "1. home" },
         { src: VASSIST_IMAGES.IMAGE_2, alt: "2. login with sso options & forgot password" },
@@ -247,8 +246,7 @@ presence in the security community, contributing to industry best practices and 
       href: "https://pim-dev-fsrlw6dawa-ey.a.run.app/",
       dates: "June 2023 - Feb 2025",
       active: true,
-      description:
-        "Developed a Product Information Management System to automate and govern product data.",
+      description: "Developed a Product Information Management System to automate and govern product data.",
       technologies: [
         "Vue.js",
         "Typescript",
@@ -256,6 +254,7 @@ presence in the security community, contributing to industry best practices and 
         "Directus",
         "GCP",
         "Nodejs",
+        "KafkaJS",
         "Sass",
         "OpenAI",
         "Docker",
@@ -269,6 +268,7 @@ presence in the security community, contributing to industry best practices and 
           icon: <Icons.globe className="size-3" />,
         },
       ],
+      highlight: PIM_IMAGES.IMAGE_3,
       images: [
         { src: PIM_IMAGES.IMAGE_1, alt: "1. login page" },
         { src: PIM_IMAGES.IMAGE_2, alt: "2. infos for collections on side bar with tabular layout view(multiple layouts are supported on this page) along with detailed view once clicked on relevant product(AI is enabled to allow user to automate product description etc.)" },
@@ -290,7 +290,7 @@ presence in the security community, contributing to industry best practices and 
       dates: "June 2022 - September 2023",
       active: true,
       description:
-        "Designed a Supplier Portal Dashboard that allowed suppliers to monitor and manage transactions, communications, and performance metrics related to their business with the company",
+        "Designed a Supplier Portal Dashboard that allowed suppliers to monitor and manage transactions, communications, and performance metrics related to their business with the company.",
       technologies: [
         "Vuejs",
         "Typescript",
@@ -312,6 +312,7 @@ presence in the security community, contributing to industry best practices and 
           icon: <Icons.globe className="size-3" />,
         },
       ],
+      highlight: SUP_IMAGES.IMAGE_2,
       images: [
         { src: SUP_IMAGES.IMAGE_1, alt: "1. login" },
         { src: SUP_IMAGES.IMAGE_2, alt: "2. dashboard page" },
@@ -355,8 +356,70 @@ presence in the security community, contributing to industry best practices and 
           icon: <Icons.github className="size-3" />,
         },
       ],
+      highlight: "",
       images: [],
       video: RCH_VIDEO.VIDEO_1,
+    },
+    {
+      title: "Active Tracker",
+      href: "https://activetracker-dev.up.railway.app/",
+      dates: "August 2020 - September 2020",
+      active: true,
+      description:
+        "Developed a Workout Tracker App to keep track of all your activity inside gym.",
+      technologies: [
+        "Javascript",
+        "Vue 3",
+        "Tailwind CSS",
+        "Supabase",
+        "Supabase Auth"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://activetracker-dev.up.railway.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: ACTIVE_TRACKER_IMAGES.IMAGE_5,
+      images: [
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_1, alt: "1. home" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_2, alt: "2. login" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_3, alt: "3. signup" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_4, alt: "4. create your workout routine" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_5, alt: "5. create whole workout sessions" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_6, alt: "6. current workout plans" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_7, alt: "7. current workout plan detail view" },
+      ],
+      video: "",
+    },
+    {
+      title: "Customer Return Portal",
+      href: "https://return.rebolet.dev/",
+      dates: "August 2023 - October 2023",
+      active: true,
+      description:
+        "Developed a Return Management System MVP to automate returns from customers.",
+      technologies: [
+        "Typescript",
+        "AWS",
+        "DynamoDB",
+        "Zod",
+        "Vite + React",
+        "I18n",
+        "Tailwind CSS",
+        "Amplify UI"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://return.rebolet.dev/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: CRP_IMAGES.IMAGE_1,
+      images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
+      video: "",
     },
   ],
   // hackathons: [

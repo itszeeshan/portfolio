@@ -50,3 +50,17 @@ export enum SUP_IMAGES{
     IMAGE_6 = "/sup/6.png",
     IMAGE_7 = "/sup/7.png",
 }
+
+export enum CRP_IMAGES{
+    IMAGE_1 = "/crp/1.png"
+}
+
+export enum ACTIVE_TRACKER_IMAGES{
+    IMAGE_1 = "/active-tracker/1.png",
+    IMAGE_2 = "/active-tracker/2.png",
+    IMAGE_3 = "/active-tracker/3.png",
+    IMAGE_4 = "/active-tracker/4.png",
+    IMAGE_5 = "/active-tracker/5.png",
+    IMAGE_6 = "/active-tracker/6.png",
+    IMAGE_7 = "/active-tracker/7.png",
+}

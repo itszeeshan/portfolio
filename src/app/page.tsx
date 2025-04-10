@@ -143,7 +143,7 @@ export default function Page() {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
+                  websites to complex web applications and I like builiding tools that make life easier for other devs. Here are a few of my
                   favorites.
                 </p>
               </div>
@@ -162,6 +162,7 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
+                  hightlight={project.highlight}
                   images={project.images}
                   video={project.video}
                   links={project.links}
@@ -169,6 +170,15 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          And much more. To explore additional projects, please{" "}
+              <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  checkout my Github.
+              </Link>
+          </p>
         </div>
       </section>
       {/* <section id="hackathons">

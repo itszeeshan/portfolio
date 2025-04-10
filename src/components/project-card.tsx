@@ -17,6 +17,7 @@ interface Props {
   dates: string;
   tags: readonly string[];
   link?: string;
+  hightlight?: string;
   images?: readonly { src: string, alt: string }[];
   video?: string;
   links?: readonly {
@@ -34,6 +35,7 @@ export function ProjectCard({
   dates,
   tags,
   link,
+  hightlight,
   images,
   video,
   links,
@@ -45,7 +47,7 @@ export function ProjectCard({
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <MediaPreview video={video} images={images}/>
+      <MediaPreview video={video} images={images} highlight={hightlight}/>
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
