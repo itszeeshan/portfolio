@@ -9,7 +9,7 @@ export const DATA = {
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
-    "Software Engineer | Cybersecurity Consultant | Former Bug Bounty Hunter & Penetration Tester",
+    "Software Engineer | Cybersecurity Consultant | Security Researcher (Bug Bounties & Pentesting)",
   summary:
     `Results-driven professional with 3+ years of professional software engineering experience in developing architecture, programming, cloud-native and cloud
 ready applications, plus 4 years of experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
