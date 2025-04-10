@@ -173,7 +173,7 @@ export default function Page() {
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           And much more. To explore additional projects, please{" "}
               <Link
-                  href={DATA.contact.social.LinkedIn.url}
+                  href={DATA.contact.social.GitHub.url}
                   className="text-blue-500 hover:underline"
                 >
                   checkout my Github.
