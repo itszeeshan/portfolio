@@ -11,17 +11,14 @@ export const DATA = {
   description:
     "Software Engineer | Cybersecurity Consultant | Security Researcher (Bug Bounties & Pentesting)",
   summary:
-    `Results-driven professional with 3+ years of professional software engineering experience in developing architecture, programming, cloud-native and cloud
-ready applications, plus 4 years of experience in cybersecurity. I specialize in building innovative, secure, efficient, and cost-effective solutions
-that drive business growth. With strong management, communication, and collaboration skills, I bridge the gap between
-technical teams and business stakeholders to ensure alignment and success.`,
+    `Results-driven professional with over 5 years of experience in software engineering, designing system architecture, writing scalable code, and building both cloud-native and cloud-ready applications. I also bring 4 years of hands-on cybersecurity expertise, including penetration testing and bug bounty research. I specialize in developing secure, efficient, and cost-effective solutions that drive business impact. Known for strong leadership, communication, and cross-functional collaboration, I bridge the gap between technical teams and business stakeholders to ensure alignment, security, and success.`,
  professional_summary: `
 - 5+ years of experience in software development.
 - 4 years of experience in cybersecurity.
-- Strong experience in developing both monolithic and microservices based applications.
-- Strong cloud experience (GCP, AWS).
-- Database design & development (SQL & NoSQL)
-- Experience in using project management tools such as Jira.
+- Skilled in both monolithic and microservices-based architecture.
+- Strong hands-on experience with cloud platforms (AWS, GCP).
+- Proficient in database design and development (SQL & NoSQL).
+- Familiar with Agile methodologies and project management tools like Jira.
  `,
   avatarUrl: "/me.jpeg",
   skills: [
