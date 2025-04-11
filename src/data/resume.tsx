@@ -5,7 +5,7 @@ import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_I
 export const DATA = {
   name: "Zeeshan",
   initials: "MZ",
-  url: "https://zeesek.io",
+  url: "https://zeesek.vercel.app/",
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
@@ -72,7 +72,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://medium.com/@zeesek", icon: NotebookIcon, label: "Blog" },
+    { href: "https://zeesek.medium.com/", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "iamzeeshan1233@gmail.com",
