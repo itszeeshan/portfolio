@@ -123,7 +123,7 @@ export const DATA = {
       location: `Berlin, Germany - Remote`,
       title: "Senior Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
-      start: "January 2024",
+      start: "July 2024",
       end: "January 2025",
       description:
         `
@@ -144,7 +144,7 @@ decisions and company growth.`,
       title: "Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "July 2022",
-      end: "January 2024",
+      end: "July 2024",
       description:
         `- Planned, Architected and Executed a **Product Information Management System** to automate and govern product data, **eliminating 60% of manual workflows
 and reducing operational overhead, enabling faster product launches with airtight security**.
