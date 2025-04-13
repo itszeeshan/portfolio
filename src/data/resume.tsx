@@ -123,8 +123,8 @@ export const DATA = {
       location: `Berlin, Germany - Remote`,
       title: "Senior Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
-      start: "Jan 2024",
-      end: "Feb 2025",
+      start: "January 2024",
+      end: "January 2025",
       description:
         `
 - Led the design and development for a **Return Management System (Customer Return Portal)** for **200,000+ customers**, allowing them to test and grade products
@@ -144,7 +144,7 @@ decisions and company growth.`,
       title: "Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "June 2022",
-      end: "Jan 2024",
+      end: "January 2024",
       description:
         `- Planned, Architected and Executed a **Product Information Management System** to automate and govern product data, **eliminating 60% of manual workflows
 and reducing operational overhead, enabling faster product launches with airtight security**.
