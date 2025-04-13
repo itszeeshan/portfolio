@@ -143,7 +143,7 @@ decisions and company growth.`,
       location: `Berlin, Germany - Remote`,
       title: "Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
-      start: "June 2022",
+      start: "July 2022",
       end: "January 2024",
       description:
         `- Planned, Architected and Executed a **Product Information Management System** to automate and govern product data, **eliminating 60% of manual workflows
