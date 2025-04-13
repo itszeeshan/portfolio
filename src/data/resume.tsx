@@ -127,32 +127,25 @@ export const DATA = {
       end: "January 2025",
       description:
         `
-- Led the design and development for a **Return Management System (Customer Return Portal)** for **200,000+ customers**, allowing them to test and grade products
-upon return, eliminating the need for manual inspection of each returned item, which **improved return processing efficiency by 50%**
-and significantly **reduced labor costs**.
-- Managed a remote tech team, driving code quality, security, and best practices through mentorship, in-depth code reviews,
-and technical guidance, resulting in faster deployments, fewer production issues, and stronger team collaboration.
-- Partnered with leadership and non-technical stakeholders to align technical solutions with business goals, driving key strategic
-decisions and company growth.`,
+- Planned and executed a **Product Information Management (PIM) system with multi-channel sync** using Vue.js, Directus, Express.js, GCP, and OpenAI for auto-enrichment. Eliminated **60%** of manual workflows and reduced operational overhead.
+- Designed **event-driven workflows** with webhooks and queuing systems for real-time product sync and inventory updates, **enabling faster launches and scalable integrations**.
+- **Managed a remote tech team**, ensuring code quality, security, and best practices, while **leading Agile ceremonies and writing Jira tickets**, resulting in a **30%** faster release cycle, reduced production incidents by **25%** , and cutting dependency bottlenecks by **40%.**
+- **Pitched** a centralized **PIM B2B2C SaaS** to C-suite stakeholders and multiple businesses, onboarding multiple clients and boosting revenue by **10%** through a monthly-based pricing model while aligning the product with their multi-channel eCommerce needs.`,
     },
     {
       company: "Rebolet",
       href: "https://www.rebolet.com/",
       badges: ["Typescript", "NodeJs", "NestJs", "ExpressJs", "Directus", "Vue", "GCP (CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)", "Sentry ", "Cypress", "Jest", "Docker", "Gitlab CI/CD", "Postgres", "Firebase", "Redis", "Sass", "Serverless", "Auth0"],
-      industries: ["B2B & B2C Re-commerce Tech", "focus to EU ecommerce market"],
+      industries: ["B2C, B2B and B2B2C SaaS and versions of our app", "E-Commerce", "Retail", "Re-Commerce", "Logistics"],
       location: `Berlin, Germany - Remote`,
       title: "Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "July 2022",
       end: "July 2024",
       description:
-        `- Planned, Architected and Executed a **Product Information Management System** to automate and govern product data, **eliminating 60% of manual workflows
-and reducing operational overhead, enabling faster product launches with airtight security**.
-- Collaborated to build **TestNGrade**, optimizing product categorization and pricing for **500+ suppliers**, driving **€7 per item on
-200,000+ products** which significantly **boosted revenue**. Enhanced backend performance by refactoring API endpoints, improving
-response times and scalability. Optimized the frontend with tree shaking, **reducing app size by 30% and cutting load times by 40%**.
-- Led the redesign of **Supplier Portal Dashboard** unifying financial data and automating invoices for executives. Optimized
-APIs and frontend, **cutting load times by 35% and boosting efficiency by 50%**. Led a UX overhaul, **increasing adoption by 45%.**`,
+        `- Led development of an MVP **return management system** for our customers using React, Vite, and AWS Amplify, integrating cloud services (DynamoDB, Lambda) for secure, scalable backend operations. Executed CI/CD deployment on AWS, reducing manual effort by **50%**, and **pitched** it to C-suite stakeholders.
+- Designed and developed a customizable **Supplier Portal Dashboard** using NestJS, Vue.js, and GCP within a monorepo structure. Leveraged serverless architecture (Firebase, Google App Engine) to enhance scalability and performance. Automated document collection, **reducing supplier onboarding time from 5 days to 2 days**.
+- Collaborated with developers and designers in Agile sprints to build **TestNGrade, a grading and pricing system** for 500+ suppliers using Vue.js, Express.js, and GCP (Firebase Functions). Refactored APIs to boost backend performance by **40%** and implemented automated testing with cypress. Optimized frontend via tree shaking(Webpack), reducing app size by **30%** and load times by **20%.**`,
     },
     {
       company: "HackerOne",
