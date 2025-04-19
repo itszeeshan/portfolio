@@ -23,7 +23,7 @@ Outside of tech, I love listening to music—and sometimes even making my own. I
 
 Always learning. Always building.`,
  professional_summary: `
-- 3 years of commercial experience in software development.
+- 5+ years of experience in software development.
 - 4 years of experience in cybersecurity.
 - Skilled in both monolithic and microservices-based architecture.
 - Strong hands-on experience with cloud platforms (AWS, GCP).
