@@ -11,7 +11,17 @@ export const DATA = {
   description:
     "Software Engineer | Cybersecurity Consultant | Security Researcher (Bug Bounties & Pentesting)",
   summary:
-    `Results-driven professional with over 5 years of experience in software engineering, designing system architecture, writing scalable code, and building both cloud-native and cloud-ready applications. I also bring 4 years of hands-on cybersecurity expertise, including penetration testing and bug bounty research. I specialize in developing secure, efficient, and cost-effective solutions that drive business impact. Known for strong leadership, communication, and cross-functional collaboration, I bridge the gap between technical teams and business stakeholders to ensure alignment, security, and success.`,
+    `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.<br>
+
+That curiosity pushed me toward development. I wanted to go deeper—learn how the internet works, how real-world systems are architected, and how developers bring ideas to life. The more I explored, the more I fell in love with building things from the ground up.<br>
+
+I transitioned into Full Stack Development to connect the dots between security, code, and architecture. Now, I don't just identify vulnerabilities—I understand the systems behind them and can contribute to building secure, scalable solutions.<br>
+
+Over time, I’ve come to see development as a blend of logic and creativity, where every line of code shapes a bigger picture. I still participate in bug bounties occasionally, purely for fun, but my main focus is on building meaningful technology that solves real problems.<br>
+
+Outside of tech, I love listening to music—and sometimes even making my own. It’s my creative escape and a way to stay inspired.<br>
+
+Always learning. Always building.`,
  professional_summary: `
 - 3 years of commercial experience in software development.
 - 4 years of experience in cybersecurity.
