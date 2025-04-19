@@ -22,53 +22,31 @@ export const DATA = {
  `,
   avatarUrl: "/me.jpeg",
   skills: [
-    "Typescript",
-    "Javascript",
-    "Nodejs",
-    "Python",
-    "Go",
-    "SQL",
-    "React.js",
-    "Next.js",
-    "Vue.js",
-    "Express.js",
-    "Nest.js",
-    "Vite",
-    "Redux",
-    "GraphQL(Apollo)",
-    "Auth0",
-    "tRPC (TypeScript Remote Procedure Call)",
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-    "DynamoDB",
-    "Supabase",
-    "Firebase",
-    "Firestore",
-    "Sequelize",
-    "Prisma",
-    "Docker",
-    "Github Actions Workflows",
-    "Gitlab CI/CD",
-    "AWS CDK (Cloud Development Kit)",
-    "Terraform",
-    "AWS (Amplify, EC2, RDS, Cognito, EKS, S3, Lambda, API Gateway, VPC, CloudWatch etc.)",
-    "GCP (App Engine, CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)",
-    "Git",
-    "Jest",
-    "Cypress",
-    "Apache Kafka",
-    "Directus",
-    "Sanity",
-    "Sentry",
-    "Stripe",
-    "CSS",
-    "Sass",
-    "TailwindCSS",
-    "Amplify UI",
-    "Shadcn UI",
-    "Magic UI",
-    "I18n",
+    // Programming Languages
+    "TypeScript", "JavaScript", "Python", "Go", "SQL",
+  
+    // Frameworks
+    "Next.js", "Vue.js", "Express.js", "Nest.js", "GoFiber", "FastApi",
+  
+    // Databases
+    "PostgreSQL", "MongoDB", "DynamoDB", "Firestore", "Redis", "Supabase",
+  
+    // Libraries & Tools
+    "Node.js", // JavaScript runtime
+    "React", "Vite", "Redux", "Vuex", "Tailwind CSS", "Amplify UI", "Shadcn UI", 
+    "Magic UI", "Next UI", "SCSS (Sass)", "Ant Design (Antd)", "Styled Components", 
+    "GraphQL (Apollo Client/Server)", "React Hook Form", "Zod", 
+    "TanStack Query", // formerly React Query
+    "Directus", "Sanity", "I18n", "next-intl", "Auth0", "WebRTC", 
+    "Socket.io", // WebSocket
+    "tRPC", // TypeScript Remote Procedure Call
+    "Apache Kafka", "Git", "Docker", "GitHub Actions workflows", "GitLab CI/CD", 
+    "Sequelize", "Prisma", "Terraform", "Jest", "Cypress", 
+    "Sentry", "Nx", "TurboRepo",
+  
+    // Cloud Platforms & Services
+    "GCP (App Engine, CloudSQL, Cloud Storage, Cloud Run, Big Query etc.)", // Google Cloud Platform
+    "AWS (Amplify, EC2, RDS, Cognito, Lambda, API Gateway, VPC etc.)", // Amazon Web Services
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
