@@ -11,15 +11,15 @@ export const DATA = {
   description:
     "Software Engineer | Cybersecurity Consultant | Security Researcher (Bug Bounties & Pentesting)",
   summary:
-    `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.<br>
+    `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.
 
-That curiosity pushed me toward development. I wanted to go deeper—learn how the internet works, how real-world systems are architected, and how developers bring ideas to life. The more I explored, the more I fell in love with building things from the ground up.<br>
+That curiosity pushed me toward development. I wanted to go deeper—learn how the internet works, how real-world systems are architected, and how developers bring ideas to life. The more I explored, the more I fell in love with building things from the ground up.
 
-I transitioned into Full Stack Development to connect the dots between security, code, and architecture. Now, I don't just identify vulnerabilities—I understand the systems behind them and can contribute to building secure, scalable solutions.<br>
+I transitioned into Full Stack Development to connect the dots between security, code, and architecture. Now, I don't just identify vulnerabilities—I understand the systems behind them and can contribute to building secure, scalable solutions.
 
-Over time, I’ve come to see development as a blend of logic and creativity, where every line of code shapes a bigger picture. I still participate in bug bounties occasionally, purely for fun, but my main focus is on building meaningful technology that solves real problems.<br>
+Over time, I’ve come to see development as a blend of logic and creativity, where every line of code shapes a bigger picture. I still participate in bug bounties occasionally, purely for fun, but my main focus is on building meaningful technology that solves real problems.
 
-Outside of tech, I love listening to music—and sometimes even making my own. It’s my creative escape and a way to stay inspired.<br>
+Outside of tech, I love listening to music—and sometimes even making my own. It’s my creative escape and a way to stay inspired.
 
 Always learning. Always building.`,
  professional_summary: `
