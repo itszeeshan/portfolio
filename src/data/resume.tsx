@@ -112,7 +112,7 @@ Always learning. Always building.`,
       title: "Senior Software Engineer",
       logoUrl: IMAGES.REBOLET_LOGO,
       start: "July 2024",
-      end: "present",
+      end: "March 2025",
       description:
         `
 - Planned and executed a **Product Information Management (PIM) system with multi-channel sync** using Vue.js, Directus, Express.js, GCP, and OpenAI for auto-enrichment. Eliminated **60%** of manual workflows and reduced operational overhead.
