@@ -9,7 +9,7 @@ export const DATA = {
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
-    "Software Engineer | Cybersecurity Consultant | Security Researcher (Bug Bounties & Pentesting)",
+    "Backend-leaning Software Engineer / Platform Engineer",
   summary:
     `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.
 
@@ -22,41 +22,49 @@ Over time, I’ve come to see development as a blend of logic and creativity, wh
 Outside of tech, I love listening to music—and sometimes even making my own. It’s my creative escape and a way to stay inspired.
 
 Always learning. Always building.`,
- professional_summary: `
-- 5+ years of experience in software development.
-- 4 years of experience in cybersecurity.
-- Skilled in both monolithic and microservices-based architecture.
-- Strong hands-on experience with cloud platforms (AWS, GCP).
-- Proficient in database design and development (SQL & NoSQL).
-- Familiar with Agile methodologies and project management tools like Jira.
+  professional_summary: `
+Backend-leaning Software Engineer / Platform Engineer with 4+ years of experience building cloud-native, SaaS systems
+used by enterprise and high-scale consumer platforms. Strong ownership across system design, backend architecture,
+cost optimization, and secure application development. Experienced in AWS and GCP, serverless and microservices
+architectures, and data-intensive systems. Known for translating business problems into scalable technical solutions and
+collaborating effectively with non-technical stakeholders.
  `,
-  avatarUrl: "/me.jpeg",
+  strengths: `
+- Cloud-native backend & platform engineering (AWS, GCP)
+- Distributed & serverless system design
+- Cost optimization & performance tuning
+- Secure system design (application & cloud security)
+- API design (REST, GraphQL)
+- CI/CD & infrastructure as code
+`,
+  avatarUrl: "/me.png",
+  cartoonAvatarUrl: "/cartoon_avatar.png",
   skills: [
-    // Programming Languages
-    "TypeScript", "JavaScript", "Python", "Go", "SQL",
-  
-    // Frameworks
-    "Next.js", "Vue.js", "Express.js", "Nest.js", "GoFiber", "FastApi",
-  
+    // Languages
+    "TypeScript", "JavaScript (Node.js)", "Go", "Python", "SQL",
+
+    // Backend & APIs
+    "Node.js", "NestJS", "Express", "GraphQL", "REST",
+
+    // Frontend (supporting)
+    "React", "Next.js", "Vue.js", "Tailwind CSS",
+
     // Databases
-    "PostgreSQL", "MongoDB", "DynamoDB", "Firestore", "Redis", "Supabase",
-  
-    // Libraries & Tools
-    "Node.js", // JavaScript runtime
-    "React", "Vite", "Redux", "Vuex", "Tailwind CSS", "Amplify UI", "Shadcn UI", 
-    "Magic UI", "Next UI", "SCSS (Sass)", "Ant Design (Antd)", "Styled Components", 
-    "GraphQL (Apollo Client/Server)", "React Hook Form", "Zod", 
-    "TanStack Query", // formerly React Query
-    "Directus", "Sanity", "I18n", "next-intl", "Auth0", "WebRTC", 
-    "Socket.io", // WebSocket
-    "tRPC", // TypeScript Remote Procedure Call
-    "Apache Kafka", "Git", "Docker", "GitHub Actions workflows", "GitLab CI/CD", 
-    "Sequelize", "Prisma", "Terraform", "Jest", "Cypress", 
-    "Sentry", "Nx", "TurboRepo",
-  
-    // Cloud Platforms & Services
-    "GCP (App Engine, CloudSQL, Cloud Storage, Cloud Run, Big Query etc.)", // Google Cloud Platform
-    "AWS (Amplify, EC2, RDS, Cognito, Lambda, API Gateway, VPC etc.)", // Amazon Web Services
+    "PostgreSQL", "MongoDB", "DynamoDB", "Redis", "Firestore",
+
+    // Object–relational mapping (ORM)
+    "TypeORM", "Prisma",
+
+    // Cloud & DevOps
+    "AWS (Lambda, RDS, S3, API Gateway, EKS, Cognito and more)",
+    "GCP (Cloud Run, Cloud SQL, BigQuery and more)",
+    "Docker", "GitHub Actions", "GitLab CI/CD",
+
+    // IaC
+    "Terraform", "AWS CDK",
+
+    // Testing & Monitoring
+    "Jest", "Cypress", "CloudWatch", "GCP Monitoring", "Sentry",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -115,10 +123,17 @@ Always learning. Always building.`,
       end: "March 2025",
       description:
         `
-- Planned and executed a **Product Information Management (PIM) system with multi-channel sync** using Vue.js, Directus, Express.js, GCP, and OpenAI for auto-enrichment. Eliminated **60%** of manual workflows and reduced operational overhead.
-- Designed **event-driven workflows** with webhooks and queuing systems for real-time product sync and inventory updates, **enabling faster launches and scalable integrations**.
-- **Managed a remote tech team**, ensuring code quality, security, and best practices, while **leading Agile ceremonies and writing Jira tickets**, resulting in a **30%** faster release cycle, reduced production incidents by **25%** , and cutting dependency bottlenecks by **40%.**
-- **Pitched** a centralized **PIM B2B2C SaaS** to C-suite stakeholders and multiple businesses, onboarding multiple clients and boosting revenue by **10%** through a monthly-based pricing model while aligning the product with their multi-channel eCommerce needs.`,
+- **Architected and delivered a serverless customer return portal** using **AWS Lambda and AppSync GraphQL**, serving 100,000+
+users and reducing manual inspection effort by **50%**.
+- **Designed a multi-platform integration layer** leveraging Strategy and Mapper patterns to abstract Shopify, ChannelEngine, and
+Macke APIs, with sequential query fallback ensuring high reliability and error isolation
+- **Implemented hierarchical BigQuery category traversal** with statistical fallback, adopting GraphQL over REST for flexible querying
+and reduced over-fetching, and secured access via API keys stored in AWS Secrets Manager for fine-grained control
+- Architected and implemented a **serverless invoicing module** within the Supplier Portal using **Google Cloud Functions, Express.js,
+and BigQuery**, enabling automated batch invoice generation with retry logic, rate limiting, and timezone-aware processing, and
+seamlessly integrating with **Zoho Books API** to convert sales and logistics data into accurate invoices for multiple suppliers.
+- Collaborated directly with leadership and non-technical stakeholders to align engineering decisions with business objectives.
+`
     },
     {
       company: "Rebolet",
@@ -131,17 +146,24 @@ Always learning. Always building.`,
       start: "July 2022",
       end: "July 2024",
       description:
-        `- Led development of an MVP **return management system** for our customers using React, Vite, and AWS Amplify, integrating cloud services (DynamoDB, Lambda) for secure, scalable backend operations. Executed CI/CD deployment on AWS, reducing manual effort by **50%**, and **pitched** it to C-suite stakeholders.
-- Designed and developed a customizable **Supplier Portal Dashboard** using NestJS, Vue.js, and GCP within a monorepo structure. Leveraged serverless architecture (Firebase, Google App Engine) to enhance scalability and performance. Automated document collection, **reducing supplier onboarding time from 5 days to 2 days**.
-- Collaborated with developers and designers in Agile sprints to build **TestNGrade, a grading and pricing system** for 500+ suppliers using Vue.js, Express.js, and GCP (Firebase Functions). Refactored APIs to boost backend performance by **40%** and implemented automated testing with cypress. Optimized frontend via tree shaking(Webpack), reducing app size by **30%** and load times by **20%.**`,
-    },
+        `
+- Led the design and development of an **enterprise Product Information Management (PIM) system**, centralizing product data
+across multiple e-commerce platforms. 
+- Deployed and operated a **self-hosted Directus platform** on Google Cloud Run using Docker, Cloud SQL, and Cloud Storage,
+significantly reducing operational overhead.
+- Integrated **BigQuery** for real-time supplier and product analytics, enabling data-driven decision-making for internal teams.
+- Improved application performance and reliability through **CDN caching, backend optimizations, and CI/CD pipeline
+improvements**, reducing deployment friction by **30%**. Optimized backend APIs and frontend delivery (tree-shaking, bundle
+optimization), reducing load times by **35%**.
+- Implemented access-control and permission systems to meet internal security and compliance requirements.
+`    },
     {
       company: "HackerOne",
       href: "https://www.hackerone.com/",
       badges: [],
       industries: [],
       location: "San Francisco, California - Remote",
-      title: "Security Researcher",
+      title: "Security Researcher (Bug Bounties & Vulnerability Research)",
       logoUrl: IMAGES.HACKERONE_LOGO,
       start: "August 2017",
       end: "January 2021",
@@ -167,77 +189,13 @@ presence in the security community, contributing to industry best practices and 
   ],
   projects: [
     {
-      title: "VAssist",
-      href: "https://vassist-dev.vercel.app/",
-      dates: "April 2021 - December 2021",
-      active: true,
-      description:
-        "Developed a Virtual Assistance Platform for users where they can connect on a single platform to have an interaction and exchange information live, they can get help or get paid for providing help.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "TailwindCSS",
-        "Shadcn UI",
-        "framer-motion",
-        "Redux",
-        "Stripe",
-        "WebRTC",
-        "Socket",
-        "Nestjs",
-        "Nodejs",
-        "Mongodb",
-        "Prisma",
-        "Mau",
-        "Vercel",
-        "Sentry",
-        "Turbo Monorepo",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://vassist-dev.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      highlight: VASSIST_IMAGES.IMAGE_4,
-      images: [
-        { src: VASSIST_IMAGES.IMAGE_1, alt: "1. home" },
-        { src: VASSIST_IMAGES.IMAGE_2, alt: "2. login with sso options & forgot password" },
-        { src: VASSIST_IMAGES.IMAGE_3, alt: "3. signup (email verification required) with sso options" },
-        { src: VASSIST_IMAGES.IMAGE_4, alt: "4. home page if users already logged in (session maintained)" },
-        { src: VASSIST_IMAGES.IMAGE_5, alt: "5. online assistants that can help you along with what they charge(hourly rate) and other info" },
-        { src: VASSIST_IMAGES.IMAGE_6, alt: "6. feed" },
-        { src: VASSIST_IMAGES.IMAGE_7, alt: "7. user profile" },
-        { src: VASSIST_IMAGES.IMAGE_8, alt: "8. private rooms for group sessions or 1-1" },
-        { src: VASSIST_IMAGES.IMAGE_9, alt: "9. private room call view, user that has created private room is the only one that can talk by default, all the others are muted, user can open other mics only or the people he has given access to" },
-        { src: VASSIST_IMAGES.IMAGE_10, alt: "10. real-time chat" },
-        { src: VASSIST_IMAGES.IMAGE_11, alt: "11. real-time call & notification systems for 1-1" },
-        { src: VASSIST_IMAGES.IMAGE_12, alt: "12. 1-1 call, based on call duration the assistant will get paid" },
-        { src: VASSIST_IMAGES.IMAGE_13, alt: "13. user profile settings" },
-        { src: VASSIST_IMAGES.IMAGE_14, alt: "14. payments" },
-        { src: VASSIST_IMAGES.IMAGE_15, alt: "15. checkout payments with stripe" },
-      ],
-      video: "",
-    },
-    {
       title: "Product Information Manager",
       href: "https://pim-dev-fsrlw6dawa-ey.a.run.app/",
       dates: "June 2023 - Feb 2025",
       active: true,
-      description: "Developed a Product Information Management System to automate and govern product data.",
+      description: "The **Product Information Manager (PIM)** is a headless CMS-based system built on Directus that enables us at Rebolet to effectively track, manage, and enrich product data across multiple e-commerce channels and marketplaces. The system automates product enrichment, pricing, inventory management, and multi-channel synchronization.",
       technologies: [
-        "Vue.js",
-        "Typescript",
-        "PostgreSQL",
-        "Directus",
-        "GCP",
-        "Nodejs",
-        "KafkaJS",
-        "Sass",
-        "OpenAI",
-        "Docker",
-        "Jest",
-        "Cypress",
+        'Directus', 'TypeScript', 'Vue', ' Node.js', 'PostgreSQL', 'Docker', 'Google Cloud Platform', 'Cloud Run', 'Cloud SQL', 'Jest'
       ],
       links: [
         {
@@ -263,12 +221,18 @@ presence in the security community, contributing to industry best practices and 
         "",
     },
     {
-      title: "Supplier Portal",
+      title: "Supplier Portal Dashboard",
       href: "https://portal.rebolet.com/",
       dates: "June 2022 - September 2023",
       active: true,
       description:
-        "Designed a Supplier Portal Dashboard that allowed suppliers to monitor and manage transactions, communications, and performance metrics related to their business with the company.",
+        `The **Supplier Portal Server Side** is a **microservices-based serverless architecture** built on Google Cloud Platform, designed to provide a comprehensive backend system for supplier management, analytics, invoicing, and inventory operations. The side on the system I worked on serves as the backend API for a supplier-facing portal, enabling suppliers to:
+- View sales analytics and performance metrics
+- Track inventory and product data
+- Access financial information and invoices
+- Manage account settings
+- Query contract metadata and fee history
+- Upload bulk inventory files`,
       technologies: [
         "Vuejs",
         "Typescript",
@@ -304,12 +268,124 @@ presence in the security community, contributing to industry best practices and 
         "",
     },
     {
+      title: "Customer Return Portal",
+      href: "https://return.rebolet.dev/",
+      dates: "August 2023 - October 2023",
+      active: true,
+      description:
+        "The **Customer Return Portal (CRP)** is a serverless 1 page facing web application that enables customers to initiate and manage product returns across multiple e-commerce platforms. The system serves **100,000+ users** and has reduced manual inspection effort by an estimated **50%** through automated condition grading and return label generation.",
+      technologies: [
+        "AWS Amplify Gen 2",
+        "AWS Lambda",
+        "AWS AppSync",
+        "AWS Cognito",
+        "AWS Secrets Manager",
+        "DynamoDB",
+        "AWS CDK",
+        "React",
+        "TypeScript",
+        "AWS Amplify UI React",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://return.rebolet.dev/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: CRP_IMAGES.IMAGE_1,
+      images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
+      video: "",
+    },
+    {
+      title: "VAssist",
+      href: "https://vassist-dev.vercel.app/",
+      dates: "April 2021 - December 2021",
+      active: true,
+      description:
+        "Developed a **Virtual Assistance Platform** for users where they can connect on a single platform to have an interaction and exchange information live, they can get help or get paid for providing help.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "React",
+        "Redux",
+        "Stripe",
+        "WebRTC",
+        "Socket",
+        "Nestjs",
+        "Nodejs",
+        "Mongodb",
+        "Prisma",
+        "Mau",
+        "Vercel",
+        "Turbo Monorepo",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://vassist-dev.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: VASSIST_IMAGES.IMAGE_4,
+      images: [
+        { src: VASSIST_IMAGES.IMAGE_1, alt: "1. home" },
+        { src: VASSIST_IMAGES.IMAGE_2, alt: "2. login with sso options & forgot password" },
+        { src: VASSIST_IMAGES.IMAGE_3, alt: "3. signup (email verification required) with sso options" },
+        { src: VASSIST_IMAGES.IMAGE_4, alt: "4. home page if users already logged in (session maintained)" },
+        { src: VASSIST_IMAGES.IMAGE_5, alt: "5. online assistants that can help you along with what they charge(hourly rate) and other info" },
+        { src: VASSIST_IMAGES.IMAGE_6, alt: "6. feed" },
+        { src: VASSIST_IMAGES.IMAGE_7, alt: "7. user profile" },
+        { src: VASSIST_IMAGES.IMAGE_8, alt: "8. private rooms for group sessions or 1-1" },
+        { src: VASSIST_IMAGES.IMAGE_9, alt: "9. private room call view, user that has created private room is the only one that can talk by default, all the others are muted, user can open other mics only or the people he has given access to" },
+        { src: VASSIST_IMAGES.IMAGE_10, alt: "10. real-time chat" },
+        { src: VASSIST_IMAGES.IMAGE_11, alt: "11. real-time call & notification systems for 1-1" },
+        { src: VASSIST_IMAGES.IMAGE_12, alt: "12. 1-1 call, based on call duration the assistant will get paid" },
+        { src: VASSIST_IMAGES.IMAGE_13, alt: "13. user profile settings" },
+        { src: VASSIST_IMAGES.IMAGE_14, alt: "14. payments" },
+        { src: VASSIST_IMAGES.IMAGE_15, alt: "15. checkout payments with stripe" },
+      ],
+      video: "",
+    },
+    {
+      title: "Active Tracker",
+      href: "https://activetracker-dev.up.railway.app/",
+      dates: "August 2020 - September 2020",
+      active: true,
+      description:
+        "Developed a Workout Tracker App to keep track of all your activity inside gym.",
+      technologies: [
+        "Javascript",
+        "Vue 3",
+        "Supabase",
+        "Supabase Auth"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://activetracker-dev.up.railway.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: ACTIVE_TRACKER_IMAGES.IMAGE_5,
+      images: [
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_1, alt: "1. home" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_2, alt: "2. login" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_3, alt: "3. signup" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_4, alt: "4. create your workout routine" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_5, alt: "5. create whole workout sessions" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_6, alt: "6. current workout plans" },
+        { src: ACTIVE_TRACKER_IMAGES.IMAGE_7, alt: "7. current workout plan detail view" },
+      ],
+      video: "",
+    },
+    {
       title: "React Custom Hooks VSCode Extension",
       href: "https://magicui.design",
       dates: "August 2024 - September 2024",
       active: true,
       description:
-        "Developed a VS Code extension to streamline real-time development by providing ready-to-use React custom hooks. Simplified workflow, reduced boilerplate, and improved code consistency for JavaScript and TypeScript projects by dynamically adapting hooks to project needs.",
+        "Developed a **VS Code extension** to streamline real-time development by providing **ready-to-use React custom hooks**. Simplified workflow, reduced boilerplate, and improved code consistency for JavaScript and TypeScript projects by dynamically adapting hooks to project needs.",
       technologies: [
         "VSCE",
         "Typescript",
@@ -337,67 +413,6 @@ presence in the security community, contributing to industry best practices and 
       highlight: "",
       images: [],
       video: RCH_VIDEO.VIDEO_1,
-    },
-    {
-      title: "Active Tracker",
-      href: "https://activetracker-dev.up.railway.app/",
-      dates: "August 2020 - September 2020",
-      active: true,
-      description:
-        "Developed a Workout Tracker App to keep track of all your activity inside gym.",
-      technologies: [
-        "Javascript",
-        "Vue 3",
-        "Tailwind CSS",
-        "Supabase",
-        "Supabase Auth"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://activetracker-dev.up.railway.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      highlight: ACTIVE_TRACKER_IMAGES.IMAGE_5,
-      images: [
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_1, alt: "1. home" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_2, alt: "2. login" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_3, alt: "3. signup" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_4, alt: "4. create your workout routine" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_5, alt: "5. create whole workout sessions" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_6, alt: "6. current workout plans" },
-        { src: ACTIVE_TRACKER_IMAGES.IMAGE_7, alt: "7. current workout plan detail view" },
-      ],
-      video: "",
-    },
-    {
-      title: "Customer Return Portal",
-      href: "https://return.rebolet.dev/",
-      dates: "August 2023 - October 2023",
-      active: true,
-      description:
-        "Developed a Return Management System MVP to automate returns from customers.",
-      technologies: [
-        "Typescript",
-        "AWS",
-        "DynamoDB",
-        "Zod",
-        "Vite + React",
-        "I18n",
-        "Tailwind CSS",
-        "Amplify UI"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://return.rebolet.dev/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      highlight: CRP_IMAGES.IMAGE_1,
-      images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
-      video: "",
     },
   ],
   // hackathons: [

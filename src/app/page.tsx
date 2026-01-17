@@ -5,18 +5,18 @@ import { Meteors } from "@/components/magicui/meteors";
 import { SpinningText } from "@/components/magicui/spinning-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Badge } from "@/components/ui/badge";
+import { SkillBadge } from "@/components/skill-badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
- 
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <SpinningText className="hidden sm:fixed sm:bottom-4 sm:right-4 sm:z-50 sm:block">learn more • earn more • grow more •</SpinningText>
-      <Meteors number={30}/>
+      <Meteors number={30} />
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -35,29 +35,20 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <AvatarPreviewDialog
-              src={DATA.avatarUrl}
-              alt={DATA.name}
-              fallback={DATA.initials}
-              fullWidth="500px"
-              className="size-28 border"
-            />
+                hoverSrc={DATA.cartoonAvatarUrl}
+                src={DATA.avatarUrl}
+                alt={DATA.name}
+                fallback={DATA.initials}
+                fullWidth="500px"
+                className="size-28 border"
+              />
             </BlurFade>
           </div>
         </div>
       </section>
       <section id="profile">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About Me</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-        </BlurFade>
-      </section>
-      <section id="professional-summary">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">Professional Summary</h2>
+          <h2 className="text-xl font-bold">ABOUT ME</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -65,10 +56,30 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
+      {/* <section id="professional-summary">
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>
+          <h2 className="text-xl font-bold">PROFESSIONAL SUMMARY</h2>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.professional_summary}
+          </Markdown>
+        </BlurFade>
+      </section> */}
+      <section id="professional-summary">
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>
+          <h2 className="text-xl font-bold">KEY ENGINEERING STRENGTHS</h2>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.strengths}
+          </Markdown>
+        </BlurFade>
+      </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">WORK EXPERIENCE</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -83,7 +94,7 @@ export default function Page() {
                 subtitle={work.title}
                 location={work.location}
                 href={work.href}
-                badges={work.badges}
+                // badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
                 industries={work.industries}
@@ -95,7 +106,7 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h2 className="text-xl font-bold">EDUCATION</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -119,12 +130,12 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Technical Skills</h2>
+            <h2 className="text-xl font-bold">TECHNOLOGIES</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <SkillBadge skill={skill} />
               </BlurFade>
             ))}
           </div>
@@ -160,7 +171,7 @@ export default function Page() {
                   key={project.title}
                   title={project.title}
                   description={project.description}
-                  dates={project.dates}
+                  // dates={project.dates}
                   tags={project.technologies}
                   hightlight={project.highlight}
                   images={project.images}
@@ -171,13 +182,13 @@ export default function Page() {
             ))}
           </div>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          And much more. To explore additional projects, please{" "}
-              <Link
-                  href={DATA.contact.social.GitHub.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  checkout my Github.
-              </Link>
+            And much more. To explore additional projects, please{" "}
+            <Link
+              href={DATA.contact.social.GitHub.url}
+              className="text-blue-500 hover:underline"
+            >
+              checkout my Github.
+            </Link>
           </p>
         </div>
       </section>
