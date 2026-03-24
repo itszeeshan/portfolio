@@ -23,11 +23,7 @@ Outside of tech, I love listening to music—and sometimes even making my own. I
 
 Always learning. Always building.`,
   professional_summary: `
-Backend-leaning Software Engineer / Platform Engineer with 4+ years of experience building cloud-native, SaaS systems
-used by enterprise and high-scale consumer platforms. Strong ownership across system design, backend architecture,
-cost optimization, and secure application development. Experienced in AWS and GCP, serverless and microservices
-architectures, and data-intensive systems. Known for translating business problems into scalable technical solutions and
-collaborating effectively with non-technical stakeholders.
+  Software Engineer with 4+ years of experience building cloud-native SaaS systems end-to-end, from scalable backend systems to performant, user-focused frontend applications to AI-powered systems with multi-agent orchestration, LLM integrations, and real-time voice pipelines. Strong ownership across system design, backend architecture, cost optimization, and secure application development. Experienced in AWS and GCP, serverless and microservices architectures, and data-intensive systems. Known for translating business problems into scalable technical solutions and collaborating effectively with non-technical stakeholders.
  `,
   strengths: `
 - Cloud-native backend & platform engineering (AWS, GCP)
