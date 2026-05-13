@@ -9,7 +9,7 @@ export const DATA = {
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
-    "Backend-leaning Software Engineer / Platform Engineer",
+    "Backend-leaning Software Engineer",
   summary:
     `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.
 
