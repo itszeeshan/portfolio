@@ -94,3 +94,14 @@ export enum KOVAH_IMAGES {
     IMAGE_26 = "/kovah/26.png",
     IMAGE_27 = "/kovah/27.png",
 }
+
+export enum QA_AGENT {
+    IMAGE_1 = "/qa-agent/1.png",
+    IMAGE_2 = "/qa-agent/2.png",
+    IMAGE_3 = "/qa-agent/3.png",
+    IMAGE_4 = "/qa-agent/4.png",
+}
+
+export enum SUBDOMAINX_VIDEO {
+    VIDEO_1 = "/subdomainx/1.mov",
+}

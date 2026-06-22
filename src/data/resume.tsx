@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, KOVAH_IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
+import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, KOVAH_IMAGES, PIM_IMAGES, QA_AGENT, RCH_VIDEO, SUBDOMAINX_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
 
 export const DATA = {
   name: "Zeeshan",
@@ -278,6 +278,59 @@ presence in the security community, contributing to industry best practices and 
         [],
     },
     {
+      title: "QA Agent",
+      href: "https://github.com/itszeeshan/qa-agent",
+      dates: "",
+      active: true,
+      description: `An autonomous QA agent that lives in Slack. Send a message like **Test the login flow** and a multi-agent pipeline will explore your codebase, generate Playwright tests, run them in Docker, auto-heal failures, and post results back to your Slack thread along with video.`,
+      technologies: [
+        'AI SDK', 'TypeScript', 'Dockrode', ' Node.js', 'p-queue', 'Docker', 'Zod', 'Slack Bolt'
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/itszeeshan/qa-agent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      highlight: QA_AGENT.IMAGE_1,
+      images: [
+        { src: QA_AGENT.IMAGE_1, alt: "" },
+        { src: QA_AGENT.IMAGE_2, alt: "" },
+        { src: QA_AGENT.IMAGE_3, alt: "" },
+        { src: QA_AGENT.IMAGE_4, alt: "" },
+      ],
+      video:
+        [],
+    },
+    {
+      title: "SubdomainX",
+      href: "https://subdomainx.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "SubdomainX is a all-in-one subdomain enumeration and reconnaissance CLI tool designed for modern cybersecurity professionals, penetration testers, and security researchers.",
+      technologies: [
+        "Golang",
+        "MakeFile",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://subdomainx.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/itszeeshan/subdomainx",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      highlight: SUBDOMAINX_VIDEO.VIDEO_1,
+      images: [],
+      video: [SUBDOMAINX_VIDEO.VIDEO_1],
+    },
+    {
       title: "Supplier Portal Dashboard",
       href: "https://portal.rebolet.com/",
       dates: "",
@@ -323,36 +376,6 @@ presence in the security community, contributing to industry best practices and 
       ],
       video:
         [],
-    },
-    {
-      title: "Customer Return Portal",
-      href: "https://return.rebolet.dev/",
-      dates: "",
-      active: true,
-      description:
-        "The **Customer Return Portal (CRP)** is a serverless 1 page facing web application that enables customers to initiate and manage product returns across multiple e-commerce platforms. The system serves **100,000+ users** and has reduced manual inspection effort by an estimated **50%** through automated condition grading and return label generation.",
-      technologies: [
-        "AWS Amplify Gen 2",
-        "AWS Lambda",
-        "AWS AppSync",
-        "AWS Cognito",
-        "AWS Secrets Manager",
-        "DynamoDB",
-        "AWS CDK",
-        "React",
-        "TypeScript",
-        "AWS Amplify UI React",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://return.rebolet.dev/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      highlight: CRP_IMAGES.IMAGE_1,
-      images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
-      video: [],
     },
     {
       title: "VAssist",
@@ -470,6 +493,36 @@ presence in the security community, contributing to industry best practices and 
       highlight: "",
       images: [],
       video: [RCH_VIDEO.VIDEO_1],
+    },
+    {
+      title: "Customer Return Portal",
+      href: "https://rebolet.shop/",
+      dates: "",
+      active: true,
+      description:
+        "The **Customer Return Portal (CRP)** is a serverless 1 page facing web application that enables customers to initiate and manage product returns across multiple e-commerce platforms. The system serves **100,000+ users** and has reduced manual inspection effort by an estimated **50%** through automated condition grading and return label generation.",
+      technologies: [
+        "AWS Amplify Gen 2",
+        "AWS Lambda",
+        "AWS AppSync",
+        "AWS Cognito",
+        "AWS Secrets Manager",
+        "DynamoDB",
+        "AWS CDK",
+        "React",
+        "TypeScript",
+        "AWS Amplify UI React",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://return.rebolet.dev/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: CRP_IMAGES.IMAGE_1,
+      images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
+      video: [],
     },
   ],
   // hackathons: [

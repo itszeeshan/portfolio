@@ -162,7 +162,7 @@ function MediaPreview({ video, images, highlight }: MediaPreviewProps) {
                         <img
                           src={item.src}
                           alt={item.alt || `Image ${index + 1}`}
-                          className="object-contain rounded-lg mx-auto my-auto w-full h-auto"
+                          className="object-contain rounded-lg m-auto w-full max-h-[80vh]"
                         />
                       )}
                       {/* {item.type === 'image' && <p className="mx-auto">{item.alt}</p>} */}
