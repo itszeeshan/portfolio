@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
+import { ACTIVE_TRACKER_IMAGES, CRP_IMAGES, IMAGES, KOVAH_IMAGES, PIM_IMAGES, RCH_VIDEO, SUP_IMAGES, VASSIST_IMAGES } from "@/constants";
 
 export const DATA = {
   name: "Zeeshan",
@@ -171,6 +171,20 @@ led the HackerOne Hacktivity dashboard for two months, serving as a key resource
 resolving issues with teams that do not pay, Belle of the Ball for a top-ranked Hacktivity report which maintained a high-impact
 presence in the security community, contributing to industry best practices and Hacking Hackers. ![https://hackerone.com/zeesek/badges](${IMAGES.HACKERONE_BAGES})`,
     },
+    {
+      company: "Bugcrowd",
+      href: "https://www.bugcrowd.com/",
+      badges: [],
+      industries: [],
+      location: "San Francisco, California - Remote",
+      title: "Security Researcher (Bug Bounties & Vulnerability Research)",
+      logoUrl: IMAGES.BUGCROWD_LOGO,
+      start: "August 2017",
+      end: "January 2021",
+      description:
+        `- Recognized by industry leaders including BugCrowd itself, Digital Ocean, Twilio, Intercom, Credit Karma and many more on this platform by helping these companies fix their security issues that could have effect 10M daily users combined.
+- Have reported multiple flaws to multiple companies like Server Security Misconfiguration, Broken Authentication and Session Management, Server-Side Injection, Insufficient Security Configurability, Insecure Data Transport, Cross-Site Scripting etc.`,
+    },
   ],
   education: [
     {
@@ -184,6 +198,53 @@ presence in the security community, contributing to industry best practices and 
     },
   ],
   projects: [
+    {
+      title: "KOVAH",
+      href: "https://kovah.vercel.app/",
+      dates: "",
+      active: true,
+      description: "Agents that run your entire business. A Project is a team workspace where humans and AI workers collaborate together. Think of it as a virtual office where your AI workers are always online, context-aware, and ready to contribute. KOVAH transforms AI agents from single-use tools into persistent team members that live inside your projects. Each worker has a role, memory, context, and personality — they participate in voice calls, respond in chat when mentioned, collaborate with each other, and proactively contribute to project goals.",
+      technologies: [
+        'Nestjs', 'TypeScript', 'Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'Supabase', 'Supabase Auth', 'Supabase Realtime', 'Supabase Storage', 'Jest', 'React', 'Tailwind', 'shadcn/ui', 'LiveKit Cloud', 'LiveKit Voice Agents', 'Deepgram STT', 'Cartesia TTS', 'MCP', 
+        'Redis', 'Dockerode', 'Zod', 'Playwright', 'Vercel AI SDK', 'Stripe', 'Zustand'
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://kovah.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      highlight: KOVAH_IMAGES.IMAGE_1,
+      images: [
+        { src: KOVAH_IMAGES.IMAGE_1, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_2, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_3, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_4, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_5, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_6, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_8, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_9, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_11, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_12, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_13, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_14, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_15, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_16, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_18, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_19, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_20, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_21, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_22, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_23, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_24, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_25, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_26, alt: "" },
+        { src: KOVAH_IMAGES.IMAGE_27, alt: "" },
+      ],
+      video:
+        [KOVAH_IMAGES.VIDEO_7, KOVAH_IMAGES.VIDEO_10],
+    },
     {
       title: "Product Information Manager",
       href: "https://pim-dev-fsrlw6dawa-ey.a.run.app/",
@@ -214,7 +275,7 @@ presence in the security community, contributing to industry best practices and 
         { src: PIM_IMAGES.IMAGE_10, alt: "10. real-time notification system. and system/user settings sections and much more!" },
       ],
       video:
-        "",
+        [],
     },
     {
       title: "Supplier Portal Dashboard",
@@ -261,7 +322,7 @@ presence in the security community, contributing to industry best practices and 
         { src: SUP_IMAGES.IMAGE_7, alt: "7. settings" },
       ],
       video:
-        "",
+        [],
     },
     {
       title: "Customer Return Portal",
@@ -291,7 +352,7 @@ presence in the security community, contributing to industry best practices and 
       ],
       highlight: CRP_IMAGES.IMAGE_1,
       images: [{ src: CRP_IMAGES.IMAGE_1, alt: "1. Multi Step Form" }],
-      video: "",
+      video: [],
     },
     {
       title: "VAssist",
@@ -341,7 +402,7 @@ presence in the security community, contributing to industry best practices and 
         { src: VASSIST_IMAGES.IMAGE_14, alt: "14. payments" },
         { src: VASSIST_IMAGES.IMAGE_15, alt: "15. checkout payments with stripe" },
       ],
-      video: "",
+      video: [],
     },
     {
       title: "Active Tracker",
@@ -373,7 +434,7 @@ presence in the security community, contributing to industry best practices and 
         { src: ACTIVE_TRACKER_IMAGES.IMAGE_6, alt: "6. current workout plans" },
         { src: ACTIVE_TRACKER_IMAGES.IMAGE_7, alt: "7. current workout plan detail view" },
       ],
-      video: "",
+      video: [],
     },
     {
       title: "React Custom Hooks VSCode Extension",
@@ -408,7 +469,7 @@ presence in the security community, contributing to industry best practices and 
       ],
       highlight: "",
       images: [],
-      video: RCH_VIDEO.VIDEO_1,
+      video: [RCH_VIDEO.VIDEO_1],
     },
   ],
   // hackathons: [
