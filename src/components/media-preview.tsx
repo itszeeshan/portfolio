@@ -162,6 +162,7 @@ function MediaPreview({ video, images, highlight }: MediaPreviewProps) {
                         <img
                           src={item.src}
                           alt={item.alt || `Image ${index + 1}`}
+                          loading="lazy"
                           className="object-contain rounded-lg m-auto w-full max-h-[80vh]"
                         />
                       )}
