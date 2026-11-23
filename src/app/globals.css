@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes nav-home-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  45% { transform: translateY(-4px) scale(1.12); }
+  70% { transform: translateY(1px) scale(0.98); }
+}
+
+@keyframes nav-blog-tilt {
+  0%, 100% { transform: rotate(0deg); }
+  35% { transform: rotate(-14deg); }
+  70% { transform: rotate(7deg); }
+}
+
+@keyframes nav-social-pop {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  45% { transform: scale(1.22) rotate(-8deg); }
+  75% { transform: scale(1.08) rotate(4deg); }
+}
+
+@keyframes nav-email-wiggle {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  30% { transform: translateX(-2px) rotate(-12deg); }
+  65% { transform: translateX(2px) rotate(9deg); }
+}
+
+@keyframes nav-theme-turn {
+  0% { transform: rotate(-35deg) scale(0.85); }
+  65% { transform: rotate(15deg) scale(1.15); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nav-icon-home:is(:hover, :focus-within) svg {
+    animation: nav-home-bounce 550ms ease-out;
+  }
+
+  .nav-icon-blog:is(:hover, :focus-within) svg {
+    animation: nav-blog-tilt 550ms ease-out;
+  }
+
+  .nav-icon-social:is(:hover, :focus-within) svg {
+    animation: nav-social-pop 500ms ease-out;
+  }
+
+  .nav-icon-email:is(:hover, :focus-within) svg {
+    animation: nav-email-wiggle 500ms ease-out;
+  }
+
+  .nav-icon-theme:is(:hover, :focus-within) svg {
+    animation: nav-theme-turn 500ms ease-out;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
