@@ -9,7 +9,7 @@ export const DATA = {
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
-    "Software Engineer",
+    "Software Engineer | Cloud-Native Systems | AI & Agentic Systems | Security Researcher",
   summary:
     `I started my tech journey at 17 as a bug bounty hunter, deeply immersed in the world of cybersecurity. It was exciting and intense, filled with late-night hunts and constant learning. But over time, I realized I was only scratching the surface—repeating familiar patterns without truly understanding how systems were built.
 
@@ -32,6 +32,7 @@ Always learning. Always building.`,
 - Secure system design (application & cloud security)
 - API design (REST, GraphQL)
 - CI/CD & infrastructure as code
+- AI & Agentic Systems Engineering
 `,
   avatarUrl: "/me.png",
   cartoonAvatarUrl: "/cartoon_avatar.png",
@@ -107,6 +108,30 @@ Always learning. Always building.`,
   },
 
   work: [
+    {
+      company: "HappyLegal GmbH",
+      href: "https://www.happylegal.de/",
+      badges: ["Typescript", "NodeJs", "NestJs", "ExpressJs", "Directus", "Vue", "GCP (CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)", "Sentry ", "Cypress", "Jest", "Docker", "Gitlab CI/CD", "Postgres", "Firebase", "Redis", "Sass", "Vite + React", "Zod", "Redux", "AWS (Amplify, CloudWatch, DynamoDB, API Gateway, S3 etc.)", "Serverless", "Terraform"],
+      industries: ["B2C, B2B and B2B2C SaaS", "Legal"],
+      location: `Berlin, Germany - Remote`,
+      title: "Technical CoFounder / Founding Engineer",
+      logoUrl: IMAGES.HAPPYLEGAL_LOGO,
+      start: "April 2025",
+      end: "Present",
+      description:
+        `
+- Leading development of a **cloud-native, serverless SaaS platform on AWS (Lambda, DynamoDB, GraphQL)**, currently in **active
+development and internal testing.**
+- Designed a **microservices-oriented backend** with **8+ Lambda functions** for **document processing, payments, and case
+management**, with a strong focus on **scalability and cost efficiency**.
+- Built a **document generation and processing pipeline (PDF generation, OCR, automated translations)** designed to **handle
+high-volume workloads (50,000+ documents annually)** once production traffic begins.
+- Designed and developed responsive, **multi-tenant React applications** for both customer and admin platforms, focusing on
+**usability, performance, and scalable component architecture**.
+- Working closely with business stakeholders to translate regulatory and operational requirements into **technical architecture and
+implementation plans**.
+`
+    },
     {
       company: "Rebolet",
       href: "https://www.rebolet.com/",

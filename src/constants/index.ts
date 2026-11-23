@@ -3,7 +3,8 @@ export enum IMAGES {
     REBOLET_LOGO = "/rebolet_logo.jpeg",
     HACKERONE_LOGO = "/hackerone_logo.jpeg",
     BUGCROWD_LOGO = "/bugcrowd_logo.png",
-    HACKERONE_BAGES = "/badges.png"
+    HACKERONE_BAGES = "/badges.png",
+    HAPPYLEGAL_LOGO = "/happylegal_logo.png",
 }
 
 export enum PIM_IMAGES{
