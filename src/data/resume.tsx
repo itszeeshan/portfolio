@@ -110,7 +110,7 @@ Always learning. Always building.`,
   work: [
     {
       company: "HappyLegal GmbH",
-      href: "https://www.happylegal.de/",
+      href: "https://app.happylegal.de/",
       badges: ["Typescript", "NodeJs", "NestJs", "ExpressJs", "Directus", "Vue", "GCP (CloudSQL, Cloud Storage, Cloud Run, Big Query, Cloud Logging And Monitoring etc.)", "Sentry ", "Cypress", "Jest", "Docker", "Gitlab CI/CD", "Postgres", "Firebase", "Redis", "Sass", "Vite + React", "Zod", "Redux", "AWS (Amplify, CloudWatch, DynamoDB, API Gateway, S3 etc.)", "Serverless", "Terraform"],
       industries: ["B2C, B2B and B2B2C SaaS", "Legal"],
       location: `Berlin, Germany - Remote`,
